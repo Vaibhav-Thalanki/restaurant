@@ -47,12 +47,49 @@ body{
         height: 80px;
         width: 80px;
     }
+    .jumbotron{
+        background:    url('../assets/restaurant.jpg') no-repeat;
+        background-size: cover;
+        height: 448px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+        padding: 0px;
+    }
+    
     
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width: 992px){
+    #phoneno{
+        visibility: visible;
+        margin-top: 20px;
+        background-color: #f6b319;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    #phoneno:hover{
+        cursor: pointer;
+        color: blue;
+    }
+}
+
 @media (min-width:992px){
+    #phoneno{
+        visibility: hidden;
+    }
     #logo-img{
         height: 100px;
         width: 100px;
+    }
+    .jumbotron{
+        background:    url('../assets/restaurant.jpg') no-repeat;
+        height: 558px;
+        background-size: cover;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
     }
 }
 @media (max-width:768px){
@@ -66,4 +103,26 @@ body{
     .navbar-brand h1{
         font-size: 5vw;
     }
+    .jumbotron{
+        background:    url('../assets/restaurant.jpg') no-repeat;
+        background-size: cover;
+        height: 330px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+    
 }
+.jumbotron{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+@media (min-width: 1200px){
+    .jumbotron{
+        background:    url('../assets/restaurant.jpg') no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+}
+
