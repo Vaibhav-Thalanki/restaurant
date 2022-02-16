@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav's restaurant</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/vaibhav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,9 +34,9 @@
                 <div class="navbar-collapse collapse " id="collapsethis">
                     <ul class="navbar-nav ms-auto lista">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link active">Home</a>
+                            <a href="index.html" class="nav-link">Home</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item">
                             <a href="menu-categories.html" class="nav-link">Menu</a>
                         </li>
                         <li class="nav-item">
@@ -57,36 +57,43 @@
             </a>
         </div>
     </header>
-    <div class="container" id="mainContent">
-        <div class=" jumbotron bg-white">
-            
+    
+    <div class="container " id="mainContent">
+        <div class=" container text-center mb-5" id="single-category-title">
+            <span><h2>Lunch Combo</h2></span>
+            <p>This combo is available on Monday to Friday from 12:30 pm to 3 pm</p>
         </div>
-        <div id="home-tiles" class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <a href="menu-categories.html">
-                    <div id="menu-tile">
-                        <span>
-                            Menu
-                        </span>
+        <section class="row">
+            <div class="col-md-6 container-fluid">
+                <div class="row">
+                    <div class="col-lg-5" id="single-item-pic">
+                        <div>DO1</div>
+                        <img src="/assets/single1.jpg" alt="" height="150px" width="250px">
+                        <p>$10 <span>(small)</span> $15 <span>(large)</span></p>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <a href="single-category.html">
-                    <div id="specials-tile">
-                        <span>Specials</span>
+                    <div class="col-lg-7" id="single-item-desc">
+                        <h4>Veal with vegetables</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita possimus voluptate. Perferendis officia dicta odio, blanditiis aliquid laborum necessitatibus voluptatibus facere animi similique laboriosam ipsam molestias voluptate, rerum sed.</p>
                     </div>
-                </a>
+                </div>
+                <hr class="d-sm-none">
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                 <a href="https://goo.gl/maps/Ck6yHt2VWmwT6u9Z8">
-                     <div id="map-tile">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10500.902039411167!2d2.2913514895690534!3d48.85391001859108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701f7e8337b5%3A0xa2cb58dd28914524!2sEiffel%20Tower%2C%20Paris%2C%20France!5e0!3m2!1sen!2sin!4v1645002004407!5m2!1sen!2sin" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        <span>Map</span>
-                     </div>
-                 </a>
+            <div class="col-md-6 container-fluid">
+                <div class="row">
+                    <div class="col-lg-5" id="single-item-pic">
+                        <div>DO2</div>
+                        <img src="/assets/single1.jpg" alt="" height="150px" width="250px">
+                        <p>$10 <span>(small)</span> $15 <span>(large)</span></p>
+                    </div>
+                    <div class="col-lg-7" id="single-item-desc">
+                        <h4>Veal with vegetables</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita possimus voluptate. Perferendis officia dicta odio, blanditiis aliquid laborum necessitatibus voluptatibus facere animi similique laboriosam ipsam molestias voluptate, rerum sed.</p>
+                    </div>
+                </div>
+                <hr class="d-sm-none">
             </div>
-        </div>
+        </section>
+    
     </div>
     <footer class="m-0 pt-5 pb-3" id="home-footer">
         <div class="container">

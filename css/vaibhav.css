@@ -26,13 +26,13 @@ body{
 }
 
 .lista {
-    align-items: center;
+    text-align: center;
     color: #61122f;
 }
 .lista div{
-    color: green;
+    color: black;
     padding: 0px 8px;
-    justify-content: center;
+    text-align: center;
 }
 .lista li:hover{
     background-color: #f7f1f3;
@@ -40,6 +40,59 @@ body{
 .navbar .navbar-toggler {
     border: 1px solid #61122f;
     background-color: wheat;
+}
+#menu-tile,#specials-tile,#map-tile{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    border-radius: 2px;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#menu-tile:hover,#specials-tile:hover,#map-tile:hover{
+    box-shadow: 0px 1px 5px 1px #cccccc;
+}
+#menu-tile{
+    background: url("../assets/food1.jfif") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#specials-tile{
+    background: url("../assets/food2.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#menu-tile span,#specials-tile span,#map-tile span{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+text-align: center;
+color: white;
+background-color: #000;
+opacity: 0.7;
+text-transform: uppercase;
+font-size: 1.5em;
+}
+#home-footer{
+    background-color: #222;
+}
+#foot1,#foot2,#foot3{
+    line-height: 1.8;
+}
+#foot1 span,#foot2 span,#foot3 span{
+font-size: 1.2em;
+}
+#foot2 p{
+    color: green;
+    line-height: 1.5;
+}
+#foot3 p{
+font-style: italic;
+}
+.active{
+    font-weight: bold;
 }
 @media (min-width:768px) and (max-width: 992px){
     #logo-img{
@@ -54,6 +107,17 @@ body{
         box-shadow: 0 0 50px #3f0c1f;
         border: 2px solid #3f0c1f;
         padding: 0px;
+    }
+    #phoneno{
+        visibility: visible;
+        margin-top: 20px;
+        background-color: #f6b319;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    #phoneno:hover{
+        cursor: pointer;
+        color: blue;
     }
     
     
@@ -110,6 +174,17 @@ a{
         box-shadow: 0 0 50px #3f0c1f;
         border: 2px solid #3f0c1f;
     }
+    #phoneno{
+        visibility: visible;
+        margin-top: 20px;
+        background-color: #f6b319;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    #phoneno:hover{
+        cursor: pointer;
+        color: blue;
+    }
     
 }
 .jumbotron{
@@ -120,9 +195,64 @@ a{
 @media (min-width: 1200px){
     .jumbotron{
         background:    url('../assets/restaurant.jpg') no-repeat;
+        height: 800px;
         background-size: cover;
         box-shadow: 0 0 50px #3f0c1f;
         border: 2px solid #3f0c1f;
     }
+    #phoneno{
+        visibility: hidden;
+    }
+}
+@media (max-width: 576px){
+#home-footer section{
+    margin-bottom: 20px;
+    text-align: center;
+}
+#home-footer section:nth-child(3){
+    margin-bottom: 0;
+}
+#home-footer hr{
+    text-align: center;
+    width: 50%;
+}
 }
 
+
+/* menu categories page */
+#menu-categories-title span{
+font-size: 1.5em;
+line-height: 1.8;
+}
+.category-tile{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.category-tile span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    opacity: 0.7;
+    font-size: 1.5em;
+}
+.category-tile:hover{
+    box-shadow: 0px 1px 5px 1px #cccccc;
+}
+
+/* single category page */
+#single-category-title span{
+    font-size: 1.5em;
+    line-height: 1.8;
+}
+#single-item-pic{
+    overflow: hidden;
+}
+#single-item-pic img{
+    object-fit: cover;
+    object-position: center;
+}
