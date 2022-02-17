@@ -185,6 +185,12 @@ a{
         cursor: pointer;
         color: blue;
     }
+    .single-item-desc h4,p{
+        text-align: center;
+    }
+    .row .single-item-pic p{
+        text-align: center;
+    }
     
 }
 .jumbotron{
@@ -213,7 +219,6 @@ a{
     margin-bottom: 0;
 }
 #home-footer hr{
-    text-align: center;
     width: 50%;
 }
 }
@@ -249,10 +254,51 @@ line-height: 1.8;
     font-size: 1.5em;
     line-height: 1.8;
 }
-#single-item-pic{
-    overflow: hidden;
+.single-tile{
+    margin-bottom: 25px;
 }
-#single-item-pic img{
+.single-tile hr{
+    width: 80%;
+    margin: auto;
+}
+.single-item-pic{
+    overflow: hidden;
+    padding: 0;
+    max-width: 250px;
+}
+.single-item-pic p{
+    text-align: end;
+    font-size: 1.2em;
+}
+.single-item-pic p span{
+    font-size: 0.5em;
+}
+.pic-relative{
+    position: relative;
+    border-radius: 5px;
+}
+.pic-relative img{
     object-fit: cover;
     object-position: center;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
 }
+.pic-relative div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.2em;
+    background-color: #557c3e;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+.single-item-desc p{
+    font-style: italic;
+    font-size: 0.9em;
+}
+.single-item-desc h4{
+    margin-bottom: 10px;
+}
+
+
