@@ -185,7 +185,7 @@ a{
         cursor: pointer;
         color: blue;
     }
-    .single-item-desc h4,p{
+    .single-item-desc h4, .single-item-desc p{
         text-align: center;
     }
     .row .single-item-pic p{
