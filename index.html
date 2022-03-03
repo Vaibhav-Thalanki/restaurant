@@ -22,22 +22,22 @@
         <nav class="navbar navbar-light navbar-expand-md " id="thisisnav">
             <div class="container-lg ">
                 <a href="index.html" class="me-5 d-none d-md-block" >
-                    <img src="assets/203-2039087_ice-cool-logo-design-transparent-cool-logos-hd.png" alt=""  id="logo-img">
+                    <img src="assets/logo.png" alt=""  id="logo-img">
                 </a>
                 <div class="navbar-brand">
                     <a href="index.html"><p><h1>Vaibhav's Restaurant</h1></p></a>
                     <p><span>Kosher certified</span></p>
                 </div>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsethis">
+                <button id="Toggler" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsethis">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse " id="collapsethis">
                     <ul class="navbar-nav ms-auto lista">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link active">Home</a>
+                            <a href="index.html" class="nav-link active" id="home-nav">Home</a>
                         </li>
                         <li class="nav-item ">
-                            <a href="menu-categories.html" class="nav-link">Menu</a>
+                            <a href="javascript:$dc.loadmenu();" class="nav-link" id="menu-nav">Menu</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">About</a>
@@ -58,35 +58,7 @@
         </div>
     </header>
     <div class="container" id="mainContent">
-        <div class=" jumbotron bg-white">
-            
-        </div>
-        <div id="home-tiles" class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <a href="menu-categories.html">
-                    <div id="menu-tile">
-                        <span>
-                            Menu
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <a href="single-category.html">
-                    <div id="specials-tile">
-                        <span>Specials</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                 <a href="https://goo.gl/maps/Ck6yHt2VWmwT6u9Z8">
-                     <div id="map-tile">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10500.902039411167!2d2.2913514895690534!3d48.85391001859108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6701f7e8337b5%3A0xa2cb58dd28914524!2sEiffel%20Tower%2C%20Paris%2C%20France!5e0!3m2!1sen!2sin!4v1645002004407!5m2!1sen!2sin" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        <span>Map</span>
-                     </div>
-                 </a>
-            </div>
-        </div>
+        
     </div>
     <footer class="m-0 pt-5 pb-3" id="home-footer">
         <div class="container">
@@ -125,7 +97,9 @@
     </footer>
 
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/vaibhav.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/ajax-utils.js"></script>
+    <script src="./js/vaibhav.js"></script>
+    
 </body>
 </html>
