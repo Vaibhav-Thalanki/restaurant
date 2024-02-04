@@ -1,6 +1,6 @@
 # Restaurant Web App
 
-Engineered a feature-rich, responsive restaurant website using `HTML, CSS, Bootstrap, JQuery, and JavaScript`, seamlessly integrating custom loaders for optimal user experience and employing `AJAX requests` to dynamically retrieve and JavaScript, along with JQuery, to populate data from `REST APIs`.
+Engineered a feature-rich, responsive, `Single Page Application (SPA)` using `HTML, CSS, Bootstrap, JQuery, and JavaScript`, seamlessly integrating custom loaders for optimal user experience and employing `AJAX requests` to dynamically retrieve and JavaScript, along with JQuery, to populate data from `REST APIs`.
 
 Showcased expertise in front-end development by implementing an interactive main page with a dynamic carousel, strategic links to menu categories, and an `embedded Google Maps`, ensuring a visually appealing and engaging user interface through strategic integration of JavaScript and JQuery.
 
