@@ -69,7 +69,7 @@
   }
   var menutitle = "snippets/menu-category-title-snippet.html";
   var menuHtml = "snippets/menu-category-snippet.html";
-  var backend = "https://davids-restaurant.herokuapp.com/categories.json";
+  var backend = "https://coursera-jhu-default-rtdb.firebaseio.com/categories.json";
   dc.loadmenu = function () {
     show_loader();
     change_active();
@@ -89,7 +89,7 @@
   var singletitle = "snippets/single-title-snippet.html";
   var singleHtml = "snippets/single-snippet.html";
   var backend2 =
-    "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
+    "https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/";
   function dorestall2(response, final2) {
     $ajaxutils.sendreq(
       singleHtml,
@@ -145,7 +145,7 @@
     show_loader();
     change_active();
     $ajaxutils.sendreq(
-      backend2 + category,
+      backend2 + category + '.json',
       function (response) {
         dorest2(response);
       },
